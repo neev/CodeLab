@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CodeLab</string>
+    <string name="shipping">Shipping</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total :</string>
+    <string name="want_to_use_android_pay"><![CDATA[\"want_to_use_android_pay\">Want to use Android Pay instead?\\n Set it up using the Android Pay app, and you’ll be all set to pay.]]></string>
+    <string name="title_activity_landing_page">LandingPage</string>
+</resources>

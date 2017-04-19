@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test.neerajal.codelab">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="$com.test.neerajal.codelab.braintree" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.test.neerajal.codelab.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.test.neerajal.codelab.LandingPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.test.neerajal.codelab.Braintree_Checkout"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.test.neerajal.codelab.CybersourceCheckoutActivity" />
+        <activity android:name="com.test.neerajal.codelab.Braintree_DropIn_UI"></activity>
+    </application>
+
+</manifest>
